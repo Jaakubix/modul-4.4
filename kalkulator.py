@@ -14,10 +14,12 @@ def kalk(oblicz, a, b):
         iloczyn = a * b
         logging.info(f"Mnożę {a} i {b}")
         logging.info(f"Wynik to {iloczyn}")
-    else:
+    elif oblicz == 4:
         iloraz = a / b
         logging.info(f"Dzielę {a} i {b}")
         logging.info(f"Wynik to {iloraz}")
+    else:
+        exit(1)
 
 if __name__ == "__main__":
     oblicz = float(input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie: "))
