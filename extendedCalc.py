@@ -4,10 +4,10 @@ logging.basicConfig(level=logging.DEBUG)
 def suma():
     x_liczby = input("Podaj liczby oddzielone przecinkami bez używania spacji: ")
     x = x_liczby.split(',')
-    z = float(x)
     result = 0
-    for items in z:
-        result = result + items
+    for items in x:
+        item = float(items)
+        result = result + item
     logging.info(f"Dodaję liczby z {x}")
     logging.info(f"Wynik to {result}")
 def roznica():
@@ -19,10 +19,10 @@ def roznica():
 def iloczyn():
     x_liczby = input("Podaj liczby oddzielone przecinkami bez używania spacji: ")
     x = x_liczby.split(',')
-    z = float(x)
     result = 1
-    for items in z:
-        result = result * items
+    for items in x:
+        item = float(items)
+        result = result * item
     logging.info(f"Mnożę liczby z {x}")
     logging.info(f"Wynik to {result}")
 def iloraz():
